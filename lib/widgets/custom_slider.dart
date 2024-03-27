@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:netflix/apiKey/api_key.dart';
+import 'package:netflix/screens/detail_screen.dart';
 
 class CustomSlider extends StatefulWidget {
   String title;
@@ -44,18 +45,18 @@ class _CustomSliderState extends State<CustomSlider> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (details) => DetailsPage(
-                        //             moviename: widget.sliderlist[index]
-                        //                 ['title'],
-                        //             image: imageApi +
-                        //                 widget.sliderlist[index]['poster_path'],
-                        //             title: widget.title,
-                        //             details: widget.sliderlist[index]
-                        //                 ['overview']))
-                        //                 );
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (details) => DetailsPage(
+                                    moviename: widget.sliderlist[index]
+                                        ['title'],
+                                    image: imageApi +
+                                        widget.sliderlist[index]['poster_path'],
+                                    title: widget.title,
+                                    details: widget.sliderlist[index]
+                                        ['overview']))
+                                        );
                       },
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(4, 0, 4, 0),
@@ -67,8 +68,8 @@ class _CustomSliderState extends State<CustomSlider> {
                             child: Image.network(
                                 filterQuality: FilterQuality.high,
                                 fit: BoxFit.cover,
-                                // imageApi +
-                                    widget.sliderlist[index]['poster_path']),
+                                imageApi +
+                                widget.sliderlist[index]['poster_path']),
                           ),
                         ),
                       ),

@@ -6,8 +6,6 @@ import 'package:netflix/widgets/custom_slider.dart';
 
 import '../function/function.dart';
 
-
-
 // ignore: must_be_immutable
 class DetailsPage extends StatefulWidget {
   DetailsPage(

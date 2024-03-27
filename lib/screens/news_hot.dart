@@ -6,7 +6,6 @@ import 'package:netflix/widgets/comming_soon.dart';
 import 'package:netflix/widgets/custom_grid.dart';
 import 'package:netflix/widgets/tab_bar.dart';
 
-
 class NewsHotScreen extends StatefulWidget {
   const NewsHotScreen({super.key});
 

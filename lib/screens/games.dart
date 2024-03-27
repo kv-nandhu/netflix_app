@@ -5,7 +5,6 @@ import 'package:netflix/function/function.dart';
 
 import '../widgets/custom_list.dart';
 
-
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
 

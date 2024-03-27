@@ -25,60 +25,59 @@ class _MyBottomState extends State<MyBottom> {
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
         items: const [
-            //item 1
-            BottomNavigationBarItem(
-              icon: InkResponse(
+          //item 1
+          BottomNavigationBarItem(
+            icon: InkResponse(
               highlightColor: Colors.transparent,
               splashColor: Colors.transparent,
               child: Icon(Icons.home_outlined),
             ),
             label: 'Home',
-            ),
+          ),
 
-            //item 2
+          //item 2
 
-            BottomNavigationBarItem(
-              icon: InkResponse(
+          BottomNavigationBarItem(
+            icon: InkResponse(
               highlightColor: Colors.transparent,
               splashColor: Colors.transparent,
               child: Icon(Icons.sports_esports_outlined),
             ),
             label: 'Games',
-            ),
+          ),
 
-            //item 3
-            BottomNavigationBarItem(
-              icon: InkResponse(
+          //item 3
+          BottomNavigationBarItem(
+            icon: InkResponse(
               highlightColor: Colors.transparent,
               splashColor: Colors.transparent,
               child: Icon(Icons.video_library_outlined),
             ),
             label: "News & hot",
-            ),
+          ),
 
-            //item 4
-            BottomNavigationBarItem(
-              icon: InkResponse(
+          //item 4
+          BottomNavigationBarItem(
+            icon: InkResponse(
               highlightColor: Colors.transparent,
               splashColor: Colors.transparent,
               child: Icon(Icons.person_2_outlined),
             ),
             label: "My Netflix",
-            )
+          )
         ],
-           currentIndex: indexNum,
-
+        currentIndex: indexNum,
         showSelectedLabels: true,
         iconSize: 30,
         showUnselectedLabels: true,
         selectedItemColor: Color.fromARGB(255, 255, 255, 255),
         unselectedItemColor: Color.fromARGB(255, 161, 151, 151),
-           onTap: (int index) {
+        onTap: (int index) {
           setState(() {
             indexNum = index;
           });
         },
-        ),
+      ),
     );
   }
 }

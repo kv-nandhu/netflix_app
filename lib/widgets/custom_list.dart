@@ -6,7 +6,6 @@ import 'package:netflix/screens/detail_screen.dart';
 
 import '../apiKey/api_key.dart';
 
-
 class Curstom_list extends StatefulWidget {
   Curstom_list({
     super.key,

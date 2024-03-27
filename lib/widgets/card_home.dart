@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../apiKey/api_key.dart';
 
-
 Stack cardHome() {
   return Stack(
     children: [
@@ -11,9 +10,7 @@ Stack cardHome() {
         width: 310,
         decoration: BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(
-                homeCard
-              ),
+              image: NetworkImage(homeCard),
             ),
             borderRadius: BorderRadius.circular(20),
             border: Border.all(width: 0.5, color: Colors.white)),

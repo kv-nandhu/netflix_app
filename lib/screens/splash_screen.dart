@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/bottom_nav/bottom_nav.dart';
-
+import 'package:netflix/function/function.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,6 +10,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+    @override
+  void initState() {
+    nowPlaying();
+    getPopularMovies();
+    getToprated();
+    getAllmovies();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(milliseconds: 2300), () {

@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/apiKey/api_key.dart';
 import 'package:intl/intl.dart';
 
-
 class CustomCommingSoon extends StatefulWidget {
   List<Map<String, dynamic>> gridList;
   CustomCommingSoon({super.key, required this.gridList});

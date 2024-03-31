@@ -65,13 +65,16 @@ class _CurstomlistState extends State<Curstom_list> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      'Title : ${widget.fullMovies[index]['title']}',
-                                      style: GoogleFonts.rubik(
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 13.2,
-                                          color: const Color.fromARGB(
-                                              255, 255, 255, 255)),
+                                    SizedBox(
+                                      width: 100,
+                                      child: Text(
+                                        'Title : ${widget.fullMovies[index]['title']}',
+                                        style: GoogleFonts.rubik(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 13.2,
+                                            color: const Color.fromARGB(
+                                                255, 255, 255, 255)),
+                                      ),
                                     ),
                                     SizedBox(
                                       height: 10,

@@ -37,7 +37,7 @@ class _CustomProfileState extends State<CustomProfile> {
           height: 5,
         ),
         Text(
-          'Akhil',
+          'Nandhu',
           style: TextStyle(color: Colors.white, fontSize: 15),
         ),
         Padding(

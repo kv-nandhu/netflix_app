@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/screens/games.dart';
 import 'package:netflix/screens/home_screen.dart';
+import 'package:netflix/screens/news_hot.dart';
+import 'package:netflix/screens/profile_screen.dart';
 
 class MyBottom extends StatefulWidget {
   const MyBottom({super.key});
@@ -14,8 +16,8 @@ class _MyBottomState extends State<MyBottom> {
   List screen = [
     const HomeScreen(),
     const GameScreen(),
-    const HomeScreen(),
-    const HomeScreen(),
+    const NewsHotScreen(),
+    const ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,6 @@ import 'package:netflix/function/function.dart';
 import 'package:netflix/widgets/appbar.dart';
 import 'package:netflix/widgets/card_home.dart';
 import 'package:netflix/widgets/custom_slider.dart';
-import 'package:netflix/widgets/tab_bar.dart';
 
 ValueNotifier<bool> tabNotifier = ValueNotifier(true);
 
@@ -25,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
           color: Colors.white,
           onRefresh: () async {
             await Future.delayed(
-              Duration(seconds: 2),
+              const Duration(seconds: 2),
               () {
                 setState(() {});
               },
@@ -33,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           child: Scaffold(
             extendBodyBehindAppBar: true,
-            backgroundColor: Color.fromARGB(255, 0, 0, 0),
+            backgroundColor: const Color.fromARGB(255, 0, 0, 0),
             appBar: appBar(context),
             body: NotificationListener<UserScrollNotification>(
                 onNotification: (notification) {
@@ -50,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 119,
                       ),
                       Center(
